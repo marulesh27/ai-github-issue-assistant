@@ -104,11 +104,11 @@ uvicorn backend.main:app --reload
 
 Backend runs at:
 
-http://127.0.0.1:8000
+The backend will run on your local machine at the configured port.
 
 Swagger UI:
 
-http://127.0.0.1:8000/docs
+Swagger documentation will be available once the server is running.
 
 5️⃣ Run Frontend UI
 
@@ -128,17 +128,25 @@ Request Body
 }
 
 📊 Example Output
+
 {
+
   "summary": "Run each test in its own <iframe>",
+  
   "type": "other",
+  
   "priority_score": "2 - Low urgency",
+  
   "suggested_labels": [
+  
     "discussion",
     "needs-review"
   ],
   "potential_impact": "Limited direct impact on users."
 }
+
 🧠 AI Processing Approach
+
 The backend includes a dedicated AI processing layer that:
 
 - Analyses the issue title and description
@@ -153,11 +161,15 @@ The design is modular, making it easy to replace the logic with an actual LLM in
 🚀 Going the Extra Mile
 
 📘 Built-in Swagger UI for easy API testing
+
 ⚠️ Graceful error handling for invalid inputs and GitHub API failures
+
 🧩 Clean separation of concerns for maintainability and extensibility
 
 🏁 Conclusion
+
 This project demonstrates an end-to-end AI-powered workflow that combines API integration, AI-style reasoning, clean system design, and a usable frontend to solve a real-world developer problem.
 
 📎 License
+
 This project is intended for educational and evaluation purposes.
