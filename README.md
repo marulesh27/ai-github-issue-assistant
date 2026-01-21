@@ -78,31 +78,32 @@ ai-github-issue-assistant/
 
 ## ⚙️ Setup & Run (Under 5 Minutes)
 
-### 1️⃣ Clone the Repository
+### Step 1: Clone the Repository
 ```bash
 git clone https://github.com/marulesh27/ai-github-issue-assistant.git
 cd ai-github-issue-assistant
 
-2️⃣ Create Virtual Environment
+Step 2: Create Virtual Environment
 python -m venv venv
 Activate it:
 Windows: venv\Scripts\activate
 Mac / Linux: source venv/bin/activate
 
-3️⃣ Install Dependencies
+Step 3: Install Dependencies
 pip install -r requirements.txt
 
-4️⃣ Run Backend API
+Step 4: Run Backend API
 uvicorn backend.main:app --reload
 Backend runs at:
 http://127.0.0.1:8000
 Swagger UI:
 http://127.0.0.1:8000/docs
 
-5️⃣ Run Frontend UI
-Open a new terminal (activate venv again):
+Step 5: Run Frontend UI
+Open a new terminal (activate venv again if needed):
 streamlit run frontend/app.py
 
+---
 🔌 API Endpoint
 POST /analyze
 Request Body
