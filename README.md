@@ -81,7 +81,7 @@ ai-github-issue-assistant/
 ### Step 1: Clone the Repository
 ```bash
 git clone https://github.com/marulesh27/ai-github-issue-assistant.git
-cd ai-github-issue-assistant
+cd ai-github-issue-assistant```
 
 ### Step 2: Create Virtual Environment
 python -m venv venv
