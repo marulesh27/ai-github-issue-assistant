@@ -85,32 +85,48 @@ cd ai-github-issue-assistant
 ```
 
 2️⃣ Create Virtual Environment
+
 python -m venv venv
+
 Activate it:
+
 Windows: venv\Scripts\activate
+
 Mac / Linux: source venv/bin/activate
 
 3️⃣ Install Dependencies
+
 pip install -r requirements.txt
 
 4️⃣ Run Backend API
+
 uvicorn backend.main:app --reload
+
 Backend runs at:
+
 http://127.0.0.1:8000
+
 Swagger UI:
+
 http://127.0.0.1:8000/docs
 
 5️⃣ Run Frontend UI
+
 Open a new terminal (activate venv again):
+
 streamlit run frontend/app.py
 
+
 🔌 API Endpoint
+
 POST /analyze
 Request Body
+
 {
   "repo_url": "https://github.com/facebook/react",
   "issue_number": 1
 }
+
 📊 Example Output
 {
   "summary": "Run each test in its own <iframe>",
