@@ -82,27 +82,25 @@ ai-github-issue-assistant/
 ```bash
 git clone https://github.com/marulesh27/ai-github-issue-assistant.git
 cd ai-github-issue-assistant
+
 2️⃣ Create Virtual Environment
 python -m venv venv
-
 Activate it:
-
 Windows: venv\Scripts\activate
 Mac / Linux: source venv/bin/activate
 
 3️⃣ Install Dependencies
 pip install -r requirements.txt
+
 4️⃣ Run Backend API
 uvicorn backend.main:app --reload
 Backend runs at:
-
 http://127.0.0.1:8000
 Swagger UI:
-
 http://127.0.0.1:8000/docs
+
 5️⃣ Run Frontend UI
 Open a new terminal (activate venv again):
-
 streamlit run frontend/app.py
 
 🔌 API Endpoint
@@ -124,7 +122,9 @@ Request Body
   ],
   "potential_impact": "Limited direct impact on users."
 }
+
 🧠 AI Processing Approach
+
 The backend includes a dedicated AI processing layer that:
 
 Analyses issue title and description
@@ -140,6 +140,7 @@ Explains potential user impact
 The design is modular, making it easy to replace the logic with an actual LLM in the future.
 
 🚀 Going the Extra Mile
+
 📘 Built-in Swagger UI for easy API testing
 
 ⚠️ Graceful error handling for invalid inputs and GitHub API failures
@@ -147,6 +148,7 @@ The design is modular, making it easy to replace the logic with an actual LLM in
 🧩 Clean separation of concerns for maintainability and extensibility
 
 🏁 Conclusion
+
 This project demonstrates an end-to-end AI-powered workflow that combines API integration, AI-style reasoning, clean system design, and a usable frontend to solve a real-world developer problem.
 
 📎 License
