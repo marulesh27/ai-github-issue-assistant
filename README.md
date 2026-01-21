@@ -83,23 +83,23 @@ ai-github-issue-assistant/
 git clone https://github.com/marulesh27/ai-github-issue-assistant.git
 cd ai-github-issue-assistant
 
-Step 2: Create Virtual Environment
+### Step 2: Create Virtual Environment
 python -m venv venv
 Activate it:
 Windows: venv\Scripts\activate
 Mac / Linux: source venv/bin/activate
 
-Step 3: Install Dependencies
+### Step 3: Install Dependencies
 pip install -r requirements.txt
 
-Step 4: Run Backend API
+### Step 4: Run Backend API
 uvicorn backend.main:app --reload
 Backend runs at:
 http://127.0.0.1:8000
 Swagger UI:
 http://127.0.0.1:8000/docs
 
-Step 5: Run Frontend UI
+### Step 5: Run Frontend UI
 Open a new terminal (activate venv again if needed):
 streamlit run frontend/app.py
 
@@ -107,7 +107,6 @@ streamlit run frontend/app.py
 🔌 API Endpoint
 POST /analyze
 Request Body
-
 {
   "repo_url": "https://github.com/facebook/react",
   "issue_number": 1
@@ -124,32 +123,26 @@ Request Body
   "potential_impact": "Limited direct impact on users."
 }
 
-🧠 AI Processing Approach
+## 🧠 AI Processing Approach
 
 The backend includes a dedicated AI processing layer that:
 
-Analyses issue title and description
-
-Classifies issues into categories such as bug, feature request, or discussion
-
-Assigns a priority score with justification
-
-Suggests relevant GitHub labels
-
-Explains potential user impact
+- Analyses the issue title and description
+- Classifies issues into categories such as **bug**, **feature request**, or **discussion**
+- Assigns a priority score with clear justification
+- Suggests relevant GitHub labels
+- Explains the potential impact on users
 
 The design is modular, making it easy to replace the logic with an actual LLM in the future.
+
 
 🚀 Going the Extra Mile
 
 📘 Built-in Swagger UI for easy API testing
-
 ⚠️ Graceful error handling for invalid inputs and GitHub API failures
-
 🧩 Clean separation of concerns for maintainability and extensibility
 
 🏁 Conclusion
-
 This project demonstrates an end-to-end AI-powered workflow that combines API integration, AI-style reasoning, clean system design, and a usable frontend to solve a real-world developer problem.
 
 📎 License
